@@ -1,0 +1,14 @@
+# 
+# /etc/fstab: static file system information
+#
+# <file system>	<dir>	<type>	<options>	<dump>	<pass>
+# UUID=50cc7b9a-b801-4df0-8500-584bf7700bc6 LABEL=sam_root
+
+# tmpfs   /var/cache/pacman/pkg   tmpfs   nodev,nosuid,x-mount.mkdir=0755,user 0 0
+
+# /.home.tmp is the tmpfs layer
+# /.home.perm is the persistent storage (the "actual" home directory)
+
+tmpfs   /.home.tmp 	tmpfs   nodev,nosuid,x-mount.mkdir=0755,user 0 0
+unionfs#/.home.tmp=rw:/.home.perm=ro /home fuse allow_other,use_ino,nonempty,cow,x-mount.mkdir=0755,user,exec 0 0
+

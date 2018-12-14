@@ -1,0 +1,66 @@
+#
+# These files won't be syned to persistent storage and will be lost upon
+# next reboot
+#
+
+# = unionfs stuff =========================================================== #
+.unionfs**
+.fuse_hidden*
+# =========================================================================== #
+
+.adobe/**
+.macromedia/**
+.dbus/**
+.lesshst
+**ncmpcpp/error.log
+.mcabber/fifo
+.vim/view/**
+.w3m/w3mcache**
+.w3m/w3mtmp**
+.local/share/xorg/**
+.Xauthority
+.config/pulse/*.tdb
+
+# == Cache stuff ============================================================ #
+.cache/openbox/**
+.cache/mesa_shader_cache/**
+.cache/event-sound-cache*
+.cache/youtube-dl/**
+.cache/MuseScore/**
+
+# == Browsers
+.cache/opera/**
+# cyberox:
+.cache/8pecxstudios/**
+# palemoon:
+.cache/moonchild productions/**
+.cache/chromium/**
+.config/chromium/CertificateTransparency/**
+.cache/mozilla/**
+.cache/inox/**
+.cache/bnox/**
+.cache/google-chrome/**
+.cache/thunderbird/**
+.thunderbird/**/datareporting/**
+
+# chromium/inox/... cache
+#Default/Cache/**
+#Default/Application Cache/**
+.config/**Cache**
+.browsers/**Cache**
+
+# Chromium/Inox: .config/inox/Singleton{Socket,Lock,Cookie}
+**/SingletonSocket
+**/SingletonLock
+**/SingletonCookie
+# Chromium/Inox: ./config/inox/BrowserMetrics/*
+**/BrowserMetrics/**
+
+# === Log files ...
+.config/**/*.log
+.config/**/LOG
+.config/**/LOG.old
+
+.browsers/**/*.log
+.browsers/**/LOG
+.browsers/**/LOG.old
