@@ -9,7 +9,7 @@ Keep a tmpfs layer before your home directory
 * Install ignore file:
    `make install-config-file`
 
-* Install scripts (or copy scripts by manually)
+* Install scripts (or copy scripts manually)
    `sudo make install`
 
 # Run
@@ -17,7 +17,7 @@ Keep a tmpfs layer before your home directory
 * Dry sync (see what would be copied):
    `sudo synchome --dry --log-file /tmp/sync.log --exclude-file ~/.config/home-tmpfs-ignore --union-dir /home --perm-dir /.home.perm`
 
-* Maybe change your exclude file if you see some stuff that shoul'd not be kept.
+* Maybe change your exclude file if you see some stuff that should not be kept.
 
 * Non-dry sync:
    `sudo synchome --exclude-file ~/.config/home-tmpfs-ignore --union-dir /home --perm-dir /.home.perm`
