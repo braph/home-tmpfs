@@ -20,6 +20,8 @@
 .local/share/xorg/**
 .Xauthority
 .config/pulse/*.tdb
+.config/obs-studio/logs/**
+.onetime/**
 
 # == Cache stuff ============================================================ #
 .cache/openbox/**
@@ -39,9 +41,12 @@
 .cache/mozilla/**
 .cache/inox/**
 .cache/bnox/**
-.cache/google-chrome/**
 .cache/thunderbird/**
 .thunderbird/**/datareporting/**
+
+# google-chrome
+.cache/google-chrome/**
+.config/google-chrome/Default/Pepper Data/**
 
 # chromium/inox/... cache
 #Default/Cache/**
